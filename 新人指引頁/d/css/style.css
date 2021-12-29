@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #161616;
+    height: auto;
+    width: 100%;
+}
+/* HEADER */
+
+/* NAV */
+
+/* SECTION */
+
+/* FOOTER */
+
+.header-bg {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/bg-index-bghead01.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+}
+
+.footer-bg {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/bg-index-bgbtm01.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.header-wrapper {
+    width: 1072px;
+    height: 384px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-title {
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-wrapper {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.table-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+@keyframes scroll {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(calc(-250px * 7));
+	}
+}
+ .slider {
+	 height: 85px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 width: 100%;
+}
+ .slider::before, .slider::after {
+	
+	 content: "";
+	 height: 100px;
+	 position: absolute;
+	 width: 100px;
+	 z-index: 2;
+}
+ .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+ .slider::before {
+	 left: 0;
+	 top: 0;
+}
+ .slider .slide-track {
+	 animation: scroll 40s linear infinite;
+	 display: flex;
+	 width: calc(250px * 14);
+}
+ .slider .slide {
+	 height: 100px;
+	 width: 250px;
+     text-align: center;
+}
+ 
+
+.content-wrapper {
+    width: 1072px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ttl {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 44px;
+}
+
+
+
+/***TABS***/
+
+
+.tabs {
+	clear: both;
+	position: relative;   
+    max-width: 1072px;
+    margin: 0 auto;
+    min-height: 278px !important;
+    margin-bottom: 52px;
+   /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+	float: left;
+}
+
+.tab label {
+	margin-right: 20px;
+	position: relative;
+	color: #ffc486;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    line-height: 280%;
+    font-family: "Microsoft Yahei";
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab [type=radio] {
+	display: none;   
+}
+
+.tab__content {
+    position: relative;
+    width: 1068px;
+    height: 232px;
+    background-image: url("../img/bg-index-content01BG.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+	top: 52px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
+	opacity: 0;
+}
+
+[type=radio]:checked ~ label {
+    color: #ffc486;
+    z-index: 2;
+    display: block;
+    width: 99%;
+    line-height: 280%;
+    font-family: "Microsoft Yahei";
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+[type=radio]:checked ~ label ~ .tab__content {
+	z-index: 1;
+	opacity: 1;
+}
+
+
+
+.nav-style01 {
+    width: 144px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #181818;
+    text-align: center;
+    margin-right: 9px;
+}
+
+.nav-style02 {
+    width: 144px;
+    height: 46px;
+    border-radius: 10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e7b560+0,fae9c4+50,e7b560+100 */
+    background: #e7b560; /* Old browsers */
+    background: -moz-linear-gradient(left,  #e7b560 0%, #fae9c4 50%, #e7b560 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #e7b560 0%,#fae9c4 50%,#e7b560 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #e7b560 0%,#fae9c4 50%,#e7b560 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7b560', endColorstr='#e7b560',GradientType=1 ); /* IE6-9 */
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tab-4-style {
+    color: #624123 !important;
+}
+
+.offer-wrapper {
+    width: 1068px;
+    height: auto;
+    position: relative;
+}
+
+.new-register {
+    width: 352px;
+    height: 565px;
+    float: left;
+    margin-right: 6px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,0.5+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.first-deposit {
+    width: 352px;
+    height: 565px;
+    float: left;
+    margin-right: 6px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,0.5+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.sugg-discount {
+    width: 352px;
+    height: 565px;
+    float: left;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,0.5+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+}
+
+.r1 {
+    clear: left;
+}
+
+
+.subtitle01 {
+    width: 299px;
+    height: 49px;
+    background-image: url(../img/ttl-index-subtitle01.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 auto;
+    padding-top: 159px;
+    margin-bottom: 20px;
+}
+
+.subtitle02 {
+    width: 299px;
+    height: 49px;
+    background-image: url("../img/ttl-index-subtitle02.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 auto;
+    padding-top: 159px;
+    margin-bottom: 20px;
+}
+
+.subtitle03 {
+    width: 299px;
+    height: 49px;
+    background-image: url("../img/ttl-index-subtitle03.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 auto;
+    padding-top: 159px;
+    margin-bottom: 20px;
+}
+
+.psubtitle {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 21px;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    line-height: 21px;
+}
+
+.table-offer{
+    font-family: "Microsoft Yahei"; 
+    line-height: 18px;
+    font-size: 18px;
+    text-align: left;
+    margin: 0 auto;
+}
+.table-offer th{
+    color: #e2ab70;
+    vertical-align: middle;
+    height: 33px;
+}
+
+.table-offer td{
+    color: #fff;
+    vertical-align: middle;
+}
+
+.table-offer03 {
+    font-family: "Microsoft Yahei"; 
+    line-height: 18px;
+    font-size: 18px;
+    text-align: left;
+    margin: 0 auto;
+    width: 310px;
+}
+
+.table-offer03 th{
+    color: #e2ab70;
+    vertical-align: middle;
+    height: 33px;
+}
+
+.table-offer03 td{
+    color: #fff;
+    vertical-align: middle;
+}
+.table-offer td.last-text{
+    color: #fae9c3;
+    vertical-align: middle;
+}
+
+.btn-wrapper {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.btn-wrapper a{
+    text-decoration: none;
+}
+.btn-wrapper p{
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+    text-align: center;
+    color: #ffc586;
+    line-height: 90px;
+}
+.btn-style {
+    width: 216px;
+    height: 63px;
+    border-radius: 10px;
+    background-color: #fae9c3;
+    margin: 34px auto;
+    font-family: "Microsoft Yahei";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #805425;
+    line-height: 60px;
+}
+
+.bgttl-left {
+    background-image: url("../img/bg-index-ttlbgLeft.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bgttl-right {
+    background-image: url("../img/bg-index-ttlbgRight.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    display: inline-block;font-size: 24px;
+    line-height: 32px;
+    color: #f7e0b3;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    margin: 0 auto;
+    padding: 0 162px;
+}
+
+.table-games {
+    width: 90%;
+    margin: 18px auto 0 auto;
+}
+.poker-games {
+    width: 90%;
+    margin: 38px auto 0 auto;
+}
+
+.game-name {
+    width: 114px;
+    height: 32px;
+    background-color: #5f5f5f;
+    border-radius: 10px;
+    font-size: 12px;
+    color:#fff;
+    line-height: 30px;
+    font-family: "Microsoft Yahei";
+    display: inline-block;
+}
+
+
+.home-link {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    transform: scale(0.8);
+    transition: 0.4s;
+}  
+.home-link:hover {
+    transition: 0.4s;
+    transform: scale(1);
+}    
+
+
+
+
+
+.scrollTop {
+  position: fixed;
+  right: 10%;
+  bottom: 24px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.scrollTop a {
+  font-size: 18px;
+  color: #fff;
+}
